@@ -8,3 +8,12 @@
     @return 'Error: The $pxValue parametre can only accept numbers';
   }
 }
+
+// The getEm function converts a pixel value to an em value
+@function getEm($pxValue) {
+  @if math.is-unitless($pxValue) {
+    @return math.div($pxValue, 16) + em; // $pxValue / 16 = pixel value in em
+  } @else {
+    @return 'Error: The $pxValue parametre can only accept numbers';
+  }
+}
