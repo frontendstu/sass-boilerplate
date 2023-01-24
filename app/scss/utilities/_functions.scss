@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+// The getRem function converts a pixel value to a rem value
+@function getRem($pxValue) {
+  @if math.is-unitless($pxValue) {
+    @return math.div($pxValue, 16) + rem; // $pxValue / 16 = pixel value in rem
+  } @else {
+    @return 'Error: The $pxValue parametre can only accept numbers';
+  }
+}
