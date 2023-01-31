@@ -1,0 +1,32 @@
+// Create mixins for hover, focus and focus-within states
+@mixin hover {
+  &:hover {
+    @content;
+  }
+}
+
+@mixin focus {
+  &:focus {
+    @content;
+  }
+}
+
+@mixin focus-within {
+  &:focus-within {
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-within {
+  &:hover,
+  &:focus-within {
+    @content;
+  }
+}
