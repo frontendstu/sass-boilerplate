@@ -1,3 +1,32 @@
+@use 'functions' as func;
+
+// Create breakpoint mixins for media queries
+$breakpoints-up: (
+  'sm': func.getEm(640),
+  'md': func.getEm(1024),
+  'lg': func.getEm(1280),
+  'xl': func.getEm(1440),
+);
+
+$breakpoints-down: (
+  'sm': func.getEm(639.98),
+  'md': func.getEm(1023.98),
+  'lg': func.getEm(1279.98),
+  'xl': func.getEm(1439.98),
+);
+
+@mixin breakpoint($breakpointSize) {
+  @media (min-width: map-get($breakpoints-up, $breakpointSize)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($breakpointSize) {
+  @media (max-width: map-get($breakpoints-down, $breakpointSize)) {
+    @content;
+  }
+}
+
 // Create mixins for hover, focus and focus-within states
 @mixin hover {
   &:hover {
