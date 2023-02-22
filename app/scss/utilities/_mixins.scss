@@ -66,3 +66,9 @@ $breakpoints-down: (
   align-items: center;
   justify-content: center;
 }
+
+@mixin flex-colum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
