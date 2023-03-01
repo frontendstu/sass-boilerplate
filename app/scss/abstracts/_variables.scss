@@ -1,5 +1,28 @@
 @use 'functions' as func;
 
+// ---------- COLOURS
+
+// Remove any colours that are not in use
+$colour-neutral-100: null;
+$colour-neutral-200: null;
+$colour-neutral-300: null;
+$colour-neutral-400: null;
+$colour-neutral-500: null;
+$colour-neutral-600: null;
+$colour-neutral-700: null;
+$colour-neutral-800: null;
+$colour-neutral-900: null;
+
+$colour-primary-100: null;
+$colour-primary-200: null;
+$colour-primary-300: null;
+$colour-primary-400: null;
+$colour-primary-500: null;
+$colour-primary-600: null;
+$colour-primary-700: null;
+$colour-primary-800: null;
+$colour-primary-900: null;
+
 // ---------- TYPOGRAPHY
 $font-url: '';
 
