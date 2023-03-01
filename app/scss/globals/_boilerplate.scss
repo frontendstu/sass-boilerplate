@@ -24,3 +24,15 @@ h1 {
 h2 {
   font-size: var.$heading-secondary-font-size;
 }
+
+a {
+  transition: var.$link-transition;
+  transition-property: var.$link-transition-property;
+  color: var.$link-colour;
+  text-decoration: var.$link-decoration;
+
+  @include mixin.hover-focus {
+    color: var.$link-colour-active;
+    text-decoration: var.$link-decoration-active;
+  }
+}
