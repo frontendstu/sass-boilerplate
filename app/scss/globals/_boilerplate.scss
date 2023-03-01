@@ -8,3 +8,19 @@ body {
   line-height: var.$copy-leading;
   font: var.$copy-font;
 }
+
+h1,
+h2 {
+  color: var.$heading-colour;
+  line-height: var.$heading-leading;
+  font-weight: var.$heading-font-weight;
+  font-family: var.$heading-font-family;
+}
+
+h1 {
+  font-size: var.$heading-main-font-size;
+}
+
+h2 {
+  font-size: var.$heading-secondary-font-size;
+}
