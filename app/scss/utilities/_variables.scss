@@ -26,6 +26,8 @@ $copy-font-weight: null;
 $copy-font-size: null;
 $copy-font-family: $font-family-primary;
 
+$copy-font: $copy-font-weight $copy-font-size $copy-font-family;
+
 // ---------- LAYOUT
 
 // ----- Wrapper
