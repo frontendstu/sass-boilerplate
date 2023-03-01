@@ -2,3 +2,9 @@
 @use '../utilities/variables' as var;
 
 @import url(var.$font-url);
+
+body {
+  color: var.$copy-colour;
+  line-height: var.$copy-leading;
+  font: var.$copy-font;
+}
