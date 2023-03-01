@@ -1,5 +1,5 @@
-@use '../utilities/mixins' as mixin;
-@use '../utilities/variables' as var;
+@use '../abstracts/mixins' as mixin;
+@use '../abstracts/variables' as var;
 
 @import url(var.$font-url);
 
