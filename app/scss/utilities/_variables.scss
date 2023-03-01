@@ -28,6 +28,15 @@ $copy-font-family: $font-family-primary;
 
 $copy-font: $copy-font-weight $copy-font-size $copy-font-family;
 
+// ----- Headings
+$heading-colour: $copy-colour;
+$heading-leading: null;
+$heading-font-weight: null;
+$heading-font-family: $font-family-primary;
+
+$heading-main-font-size: null;
+$heading-secondary-font-size: null;
+
 // ---------- LAYOUT
 
 // ----- Wrapper
