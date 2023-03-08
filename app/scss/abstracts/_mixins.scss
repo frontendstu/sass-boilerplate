@@ -72,3 +72,17 @@ $breakpoints-down: (
   flex-direction: column;
   justify-content: center;
 }
+
+// Create mixins for grid
+@mixin grid(
+  $grid-col-count,
+  $grid-col-row-count: null,
+  $grid-row-gap: null,
+  $grid-col-gap: null
+) {
+  display: grid;
+  grid-template-columns: $grid-col-count;
+  grid-template-rows: $grid-col-row-count;
+  column-gap: $grid-col-gap;
+  row-gap: $grid-row-gap;
+}
